@@ -1,8 +1,11 @@
 import subprocess
 import os
 # Input video file and audio file
-video_file = "16644837_hq.mp4"
-audio_file = "16644837_hq.mp4"
+video_file = "video.mp4"
+audio_file = "video.mp4"
+# Check if the file exists
+if !os.path.exists(audio_file):
+    audio_file = "video.mp3"
 # Output directory for HLS streams and playlist
 output_directory = "output_hls/"
 # Set the segment duration (in seconds) This splits the stream into chunks per x
